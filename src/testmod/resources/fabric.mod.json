@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
-	"version": "${version}",
-	"name": "Example mod",
+	"id": "modid_test",
+	"version": "1.0.0",
+	"name": "Example Mod Test",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -12,24 +12,23 @@
 		"sources": "https://github.com/Pluto7073/plutos-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/modid_test/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.example.test.ExampleModTest"
 		],
 		"client": [
-			"com.example.client.ExampleModClient"
+			"com.example.test.client.ExampleTestClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=${loader_version}",
-		"minecraft": "~${minecraft_version}",
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
 		"java": ">=17",
-		"fabric-api": ">=${fabric_api_version"
+		"fabric-api": "*"
 	},
 	"suggests": {
 		"another-mod": "*"
